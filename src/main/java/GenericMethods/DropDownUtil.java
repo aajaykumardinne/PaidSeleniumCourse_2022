@@ -1,4 +1,4 @@
-package DropDownHandle;
+package GenericMethods;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +39,18 @@ public class DropDownUtil {
 	}
 
 	/**
+	 * This method is used to select the value from a drop down on the basis of value
+	 * @param element
+	 * @param value
+	 */
+	
+	public void selectValuefromDropDownByValue(WebElement element, String value) {
+		Select select = new Select(element);
+		select.selectByValue(value);
+	}
+	
+	
+	/**
 	 * This method is used to get all the values from drop down
 	 * 
 	 * @param element
@@ -75,7 +87,7 @@ public class DropDownUtil {
 
 		List<WebElement> dropdownList = driver.findElements(By.xpath(locator));
 
-		System.out.println("The numer of drop down values : " + dropdownList.size());
+		System.out.println("The number of drop down values : " + dropdownList.size());
 
 		for (int i = 0; i < dropdownList.size(); i++) {
 			String dropdownText = dropdownList.get(i).getText();

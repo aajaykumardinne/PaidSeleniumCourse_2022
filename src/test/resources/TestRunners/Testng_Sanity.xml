@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="TestNg Sessions Sanity Suite">
+	<test name="My Testng Practice Sanity Test" verbose="5">
+
+		<classes>
+
+			<class name="PaidTestNGCourse_2022.InvocationCountConcept" />
+			<class name="PaidTestNGCourse_2022.PriorityTest" />
+
+		</classes>
+	</test>
+</suite> 

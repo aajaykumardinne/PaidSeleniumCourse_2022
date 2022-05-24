@@ -22,7 +22,7 @@ public class ImplicitWaitConcept {
 		// global wait : it will be applicable for all the web elements
 		// FE : imp wait will be applied by default
 		// it works only for web elements
-		// it does not work for non web elements: alerts, url, title
+		// it does not work for non web elements: frames, alerts, url, title
 		// we avoid imp wait in framework design
 
 		/**
@@ -54,7 +54,7 @@ public class ImplicitWaitConcept {
 
 		Actions action = new Actions(driver);
 		action.sendKeys(emailId, "dinnekumar@outlook.com").build().perform();
-		action.sendKeys(password, "happy").build().perform();
+		action.sendKeys(password, "Happymind_90").build().perform();
 
 	}
 

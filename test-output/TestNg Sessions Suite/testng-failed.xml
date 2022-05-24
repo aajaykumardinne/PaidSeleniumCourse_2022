@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNg Sessions Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="My Testng Practic Test(failed)">
+    <classes>
+      <class name="PaidTestNGCourse_2022.DependsonMethodConcept">
+        <methods>
+          <include name="homePageTest"/>
+          <include name="searchTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- PaidTestNGCourse_2022.DependsonMethodConcept -->
+    </classes>
+  </test> <!-- My Testng Practic Test(failed) -->
+</suite> <!-- Failed suite [TestNg Sessions Suite] -->

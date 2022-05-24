@@ -1,4 +1,5 @@
 package HashMapConcepts;
+
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
@@ -42,7 +43,7 @@ public class UserData {
 		productsTable.put("Windows Dell Laptop", "1500");
 		productsTable.put("Apple iPhone 12", "1200");
 //		productsTable.put(null, "1500"); Nullpointer Exception
-		productsTable.put("Apple watch", null); // Nullpointer Exception
+//		productsTable.put("Apple watch", null); // Nullpointer Exception
 		
 		for(Map.Entry m : productsTable.entrySet()) {
 			System.out.println(m.getKey() + " " + m.getValue());

@@ -39,6 +39,7 @@ public class LoginPageTest {
 	// @BeforeMethod --- use when there are more number of test cases to execute for web application.
 	// opens the browser every single time for each test case to execute for the @BeforeMethod annotation.
 	// more time for the execution.
+	// 95% follow this approach.
 
 	WebDriver driver;
 

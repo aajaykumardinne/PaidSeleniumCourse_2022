@@ -2,6 +2,7 @@ package SeleniumBasics;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class WebDriverBasics {
 
@@ -11,6 +12,11 @@ public class WebDriverBasics {
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		// top-casting concept
 		WebDriver driver = new ChromeDriver(); // 1. open the browser
+//		
+//		RemoteWebDriver driver1 = new ChromeDriver();
+//		driver1.getTitle();
+//		driver1.get("");
+		
 		// session id is created and communicates with the browser
 		driver.get("https://amazon.in"); // 2. enter the url
 

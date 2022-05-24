@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -39,7 +40,7 @@ public class Util {
 
 	/**
 	 * An expectation for checking that an element is present on the DOM of a page.
-	 * This does notnecessarily mean that the element is visible.
+	 * This does not necessarily mean that the element is visible.
 	 * 
 	 * @param locator
 	 * @param timeOut
@@ -79,4 +80,38 @@ public class Util {
 			System.out.println(e.getMessage());
 		}
 	}
+	
+	/**
+	 * This method is used to perform the sendKeys method using the Action class
+	 * @param locator
+	 * @param value
+	 */
+	
+	public void doActionSendKeys(By locator, String value) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getElement(locator),value).perform();;
+	}
+	
+	/**
+	 * This method is used to perform the click Method using the Action class
+	 * @param locator
+	 */
+	
+	public void doActionClick(By locator) {
+		Actions action = new Actions(driver);
+		action.click(getElement(locator)).perform();
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

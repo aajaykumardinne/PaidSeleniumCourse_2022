@@ -16,19 +16,19 @@ public class CSSSelector {
 		
 		// cssSelectors are faster than Xpath in terms of execution
 		
-			//id: #{id-attribute value}
+			//1.id: #{id-attribute value}
 		// #username
 		// input#username
 		// input[id='username']
 		// input[id='username'][type='email']
 		
-		// classname : .{classname}
+			//2.classname : .{classname}
 		// .form-control.private-form__control.login-email
 		// input.form-control.private-form__control.login-email
 		// .login-email
 		// input.login-email
 		
-		//text
+			//3. text
 		// input[id^='user']  --   starting text
 		// input[id^='pass']
 		
@@ -42,7 +42,7 @@ public class CSSSelector {
 		// input[id*='name']
 		
 		
-		// parent and child tag
+			//4.parent and child tag
 		// div>input[id='username']
 		// div>input#username
 		// div.private-form__input-wrapper>input[id='username']

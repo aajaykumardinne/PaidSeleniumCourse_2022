@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PaidTestNGCourse_2022.LoginPageTest">
+      <class name="com.Test.SignUpTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="signInTest"/>
+          <include name="privacyPolicyLinkTest"/>
+          <include name="verifyCreateFreeAccountTest"/>
         </methods>
-      </class> <!-- PaidTestNGCourse_2022.LoginPageTest -->
+      </class> <!-- com.Test.SignUpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
