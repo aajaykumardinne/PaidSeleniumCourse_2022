@@ -12,7 +12,7 @@ public class RelativeLocators {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("");
+		driver.get("https://whenwise.com/");
 		
 
 	}
