@@ -26,6 +26,7 @@ public class WindowdPopup {
 		// child window - facebook page
 		driver.findElement(By.xpath("//img[@alt='OrangeHRM on Facebook']")).click();
 		
+		
 
 		// getWindowhandles method get the windowId of the parent window and the child
 		// window

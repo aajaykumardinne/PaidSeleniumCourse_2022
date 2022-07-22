@@ -24,7 +24,8 @@ public class HeadlessBrowser {
 		
 		WebDriverManager.firefoxdriver().setup();
 		FirefoxOptions options = new FirefoxOptions();
-		options.addArguments("--headless");
+	//	options.addArguments("--headless");
+		options.setHeadless(true);
 		
 		WebDriver driver = new FirefoxDriver(options);
 		

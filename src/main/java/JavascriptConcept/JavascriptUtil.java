@@ -57,6 +57,11 @@ public class JavascriptUtil {
 		js.executeScript("document.getElementById('" + id + "').value='" + value + "'");
 	}
 
+	
+	/**
+	 * This method will scroll the page to the botton/footer of the page
+	 * @param driver
+	 */
 	public static void scrollPageDown(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -72,6 +77,11 @@ public class JavascriptUtil {
 		js.executeScript("window.scrollTo(document.body.scrollHeight, 0)");
 	}
 
+	/**
+	 * This method will perform the page scrolling down until specfic element is displayed
+	 * @param driver
+	 * @param element
+	 */
 	public static void scrollIntoView(WebDriver driver,WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);

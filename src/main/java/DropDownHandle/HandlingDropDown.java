@@ -17,6 +17,7 @@ public class HandlingDropDown {
 
 		driver.get("http://register.rediff.com/register/register.php?FormName=user_details");
 
+		
 		Thread.sleep(5000);
 
 		WebElement day = driver.findElement(By.xpath("//select[starts-with(@name,'DOB_Day')]"));

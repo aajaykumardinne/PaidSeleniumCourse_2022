@@ -15,4 +15,21 @@
       </class> <!-- com.Test.SignUpTest -->
     </classes>
   </test> <!-- SignUp Test(failed) -->
+  <test thread-count="2" parallel="tests" name="Login Test(failed)">
+    <parameter name="password" value="Happysoul@15"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://app.hubspot.com/login"/>
+    <parameter name="username" value="dinnekumar@outlook.com"/>
+    <classes>
+      <class name="com.Test.LoginTest">
+        <methods>
+          <include name="signInTest"/>
+          <include name="signUpLinkTest"/>
+          <include name="tearDown"/>
+          <include name="loginTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Test.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
 </suite> <!-- Failed suite [HubSpot Application Automation Suite] -->
