@@ -14,7 +14,10 @@ public class CustomXpath_2 {
 		WebDriver driver = new ChromeDriver();
 		
 		// 1. absolute Xpath: starts from the root element to the destination element--Never use or not recommended
-		// 2. relative/custome xpath:starts from the any element
+		// 2. relative/custom xpath:starts from the any element
+		
+		// 1. single forward slash(/) includes direct child of parent tag.
+		// 2. double forward slash(//) includes indirect child of parent tag.
 		
 		driver.get("https://app.hubspot.com/login");
 		//Xpath-axes
